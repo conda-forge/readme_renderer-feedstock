@@ -1,5 +1,5 @@
 {% set name = "readme_renderer" %}
-{% set version = "27.0" %}
+{% set version = "34.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6871b10341cdd85ade112fb8503b31301d1ca12c0c3b3e1358855329519968b
+  sha256: dfb4d17f21706d145f7473e0b61ca245ba58e810cf9b2209a48239677f82e5b0
 
 build:
   number: 0
@@ -16,16 +16,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - bleach >=2.1.0
-    - cmarkgfm >=0.2.0
+    - cmarkgfm >=0.8.0
     - docutils >=0.13.1
     - pygments >=2.5.1
-    - python
-    - setuptools
-    - six
+    - python >=3.6
 
 test:
   imports:
