@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/pypa/readme_renderer
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: readme_renderer is a library for rendering "readme" descriptions for Warehouse
