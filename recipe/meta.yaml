@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
     - bleach >=2.1.0
     - cmarkgfm >=0.8.0
     - docutils >=0.13.1
     - pygments >=2.5.1
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
