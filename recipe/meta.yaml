@@ -28,7 +28,10 @@ requirements:
 test:
   imports:
     - readme_renderer
-    - readme_renderer.integration
+  source_files:
+    - README.rst
+  commands:
+    - python -m readme_renderer README.rst
 
 about:
   home: https://github.com/pypa/readme_renderer
