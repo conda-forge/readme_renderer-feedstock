@@ -1,5 +1,5 @@
 {% set name = "readme_renderer" %}
-{% set version = "36.0" %}
+{% set version = "37.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f71aeef9a588fcbed1f4cc001ba611370e94a0cd27c75b1140537618ec78f0a2
+  sha256: 07b7ea234e03e58f77cc222e206e6abb8f4c0435becce5104794ee591f9301c5
 
 build:
   number: 0
