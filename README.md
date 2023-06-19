@@ -1,11 +1,11 @@
-About readme_renderer
-=====================
+About readme_renderer-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/readme_renderer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pypa/readme_renderer
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/readme_renderer-feedstock/blob/main/LICENSE.txt)
 
 Summary: readme_renderer is a library for rendering "readme" descriptions for Warehouse
 
