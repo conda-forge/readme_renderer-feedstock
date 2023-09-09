@@ -19,7 +19,7 @@ requirements:
     - python >=3.8
     - pip
   run:
-    - bleach >=2.1.0
+    - nh3 >=0.2.14
     - cmarkgfm >=0.8.0
     - docutils >=0.13.1
     - pygments >=2.5.1
