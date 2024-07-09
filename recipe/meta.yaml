@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
     - nh3 >=0.2.14
     - cmarkgfm >=0.8.0
-    - docutils >=0.13.1
+    - docutils >=0.21.2
     - pygments >=2.5.1
-    - python >=3.8
+    - python >=3.9
 
 test:
   imports:
