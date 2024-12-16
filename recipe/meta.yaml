@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - nh3 >=0.2.14
     - cmarkgfm >=0.8.0
