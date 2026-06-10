@@ -6,7 +6,7 @@ context:
 
 package:
   name: ${{ name|lower }}
-  version: ${{ version }}
+  version: "${{ version }}"
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
@@ -33,16 +33,18 @@ tests:
   - python:
       imports:
         - readme_renderer
-      pip_check: false
-      python_version: ${{ python_min }}
-  - files:
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - 3.*
+  - script:
+      - python -m readme_renderer README.rst
+    files:
       source:
         - README.rst
     requirements:
       run:
         - python ${{ python_min }}.*
-    script:
-      - python -m readme_renderer README.rst
 
 about:
   license: Apache-2.0
