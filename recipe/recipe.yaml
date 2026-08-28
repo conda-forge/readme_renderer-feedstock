@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: readme_renderer
-  version: "45.0"
+  version: "46.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 030a8fac74904f8fba11ad1bb6964e3f76e896dc7e5e71f16af190c9056696d1
+  sha256: af3e964914f6310a33ff67b72a4bdd940bed8d7c3bdecd2d14f40edf284bfe90
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
